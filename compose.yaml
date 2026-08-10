@@ -1,0 +1,20 @@
+services:
+  db:
+    image: postgres:17
+    container_name: animal-translator-db
+
+    environment:
+      POSTGRES_DB: animal_translator
+      POSTGRES_USER: animal_user
+      POSTGRES_PASSWORD: animal_password
+
+    ports:
+      - "55432:5432"
+
+    volumes:
+      - animal_translator_data:/var/lib/postgresql/data
+
+    restart: unless-stopped
+
+volumes:
+  animal_translator_data:
