@@ -9,7 +9,7 @@ services:
       POSTGRES_PASSWORD: animal_password
 
     ports:
-      - "55432:5432"
+      - "5433:5432"
 
     volumes:
       - animal_translator_data:/var/lib/postgresql/data

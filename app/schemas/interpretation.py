@@ -31,6 +31,12 @@ class SourceResponse(BaseModel):
     url: str
 
 
+class EvidenceSummary(BaseModel):
+    evidence_basis: list[str]
+    limitations: list[str]
+    sources: list[SourceResponse]
+
+
 class InterpretationAlternative(BaseModel):
     rule_key: str
 
@@ -62,5 +68,7 @@ class InterpretationResponse(BaseModel):
     primary_interpretation: InterpretationAlternative | None
 
     alternatives: list[InterpretationAlternative]
+
+    evidence_summary: EvidenceSummary | None = None
 
     disclaimer: str
