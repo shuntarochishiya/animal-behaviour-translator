@@ -1,33 +1,38 @@
 from __future__ import annotations
 
-from sqlalchemy import String, Text
+from sqlalchemy import ForeignKey, String, Text
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.database.db import Base
 
 
-class Species(Base):
-    __tablename__ = "species"
+class Signal(Base):
+    __tablename__ = "signals"
 
     id: Mapped[int] = mapped_column(
         primary_key=True,
         autoincrement=True,
     )
 
-    slug: Mapped[str] = mapped_column(
-        String(100),
-        unique=True,
+    species_id: Mapped[int] = mapped_column(
+        ForeignKey("species.id", ondelete="CASCADE"),
         nullable=False,
         index=True,
     )
 
-    common_name: Mapped[str] = mapped_column(
+    slug: Mapped[str] = mapped_column(
+        String(100),
+        nullable=False,
+        index=True,
+    )
+
+    name: Mapped[str] = mapped_column(
         String(150),
         nullable=False,
     )
 
-    scientific_name: Mapped[str] = mapped_column(
-        String(150),
+    category: Mapped[str] = mapped_column(
+        String(50),
         nullable=False,
     )
 
@@ -36,10 +41,9 @@ class Species(Base):
         nullable=False,
     )
 
-    signals: Mapped[list["Signal"]] = relationship(
-        back_populates="species",
-        cascade="all, delete-orphan",
+    species: Mapped["Species"] = relationship(
+        back_populates="signals",
     )
 
 
-from app.models.signals import Signal
+from app.models.species import Species
