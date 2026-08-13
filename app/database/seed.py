@@ -4,7 +4,7 @@ from sqlalchemy import delete, select
 from sqlalchemy.orm import Session
 
 from app.database.db import Base, SessionLocal, engine
-from app.database.seed_data import cat, dog, elephant, horse
+from app.database.seed_data import cat, dog, elephant, horse, duck
 
 from app.models.interpretation_rules import InterpretationRule
 from app.models.rule_source import RuleSource
@@ -50,6 +50,16 @@ SPECIES_DATA = [
             "touch and social context."
         ),
     },
+    {
+        "slug": "duck",
+        "common_name": "Domestic duck",
+        "scientific_name": "Anas platyrhynchos domesticus",
+        "description": (
+            "Communication may involve vocalizations, "
+            "courtship displays, body movements, "
+            "and social interactions."
+        ),
+    },
 ]
 
 
@@ -58,6 +68,7 @@ ANIMALS = [
     ("cat", cat),
     ("horse", horse),
     ("african-elephant", elephant),
+    ("duck", duck)
 ]
 
 

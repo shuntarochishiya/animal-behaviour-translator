@@ -4,21 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f60b77df-fa7d-421b-98f2-4ae5fe55cac7" name="Changes" comment="собака">
-      <change afterPath="$PROJECT_DIR$/app/database/seed_data/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/database/seed_data/cat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/database/seed_data/dog.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/database/seed_data/elephant.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/database/seed_data/horse.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/database/seed_data/species.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="f60b77df-fa7d-421b-98f2-4ae5fe55cac7" name="Changes" comment="другие животные">
+      <change afterPath="$PROJECT_DIR$/app/database/seed_data/duck.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/interpretation.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/interpretation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/database/seed.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/seed.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/interpretation_rules.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/interpretation_rules.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/schemas/interpretation.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/schemas/interpretation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/interpretation_engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/interpretation_engine.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,13 +104,22 @@
       <option name="project" value="LOCAL" />
       <updated>1786431229097</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="другие животные">
+      <option name="closed" value="true" />
+      <created>1786462739669</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1786462739669</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="начало положено" />
     <MESSAGE value="собака" />
-    <option name="LAST_COMMIT_MESSAGE" value="собака" />
+    <MESSAGE value="другие животные" />
+    <option name="LAST_COMMIT_MESSAGE" value="другие животные" />
   </component>
 </project>
